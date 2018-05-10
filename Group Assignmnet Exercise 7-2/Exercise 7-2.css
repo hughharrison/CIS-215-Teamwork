@@ -1,0 +1,151 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #800000;
+    background-color: #fffded;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #800000;
+	padding: 1.5em 0;
+	background-image: -moz-linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: linear-gradient(
+	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+}
+header h1 {
+	color: #800000;
+}
+header h2 {
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/* Styles for Nav Menu */
+#nav_menu ul {    /* Removed bullet points and reset margins and padding. */
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;    /* Displays elements horizontally. */
+}
+#nav_menu ul li a {
+    display: block;    /* Sets properties for links in navigation menu. */
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;    /* Set current class color to yellow. */
+}
+#nav_menu ul ul {    /* Positioning submenu. */
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {    /* Displays submenu vertically. */
+	float: none;
+}
+#nav_menu ul li:hover > ul {    /* Displays submenu as block element when hovered over with mouse cursor. */
+	display: block;
+}
+#nav_menu > ul::after {    /* Adding space after menu, clearing content to stop it from floating, and displaying content as a block. */ 
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section {
+	clear: left;
+	padding: 0 20px 20px;
+	width: 525px;
+	float: right;
+}
+section h1 {
+	color: #800000;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+section h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 1.5em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+
+article h1 {
+	color: black;
+}
+article img {
+	float: right;
+	margin: 1em 0 1em 1em;
+	border: 1px solid black;
+}
+aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+aside h1 {
+	color: #800000;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+aside h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+
+
+footer {
+	border-top: 3px solid #800000;
+	clear: both;
+}
+footer p {
+	padding: 1em 0;
+	text-align: center;
+}
